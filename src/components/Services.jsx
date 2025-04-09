@@ -50,7 +50,7 @@ const Services = () => {
   };
 
   return (
-    <div className="w-full bg-gradient-to-b from-transparent to-gray-700/5 text-white py-20 px-4 md:px-12 lg:px-24">
+    <div className="w-full bg-gradient-to-b from-transparent to-gray-700/5 text-white md:pt-20 pb-20 px-4 md:px-12 lg:px-24">
       <h2 className="text-3xl md:text-5xl font-bold text-center text-[#867FF0] mb-16">Our Services</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center">

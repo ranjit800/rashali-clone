@@ -32,7 +32,7 @@ const ProfessionalServices = () => {
   return (
     <section className="text-white py-16 px-4 text-center">
       <div className="mb-4">
-        <span className="text-sm px-4 py-4 bg-[#1c2b4a] text-blue-300 rounded-full uppercase tracking-wide border-[1px] border-blue-500">
+        <span className="text-sm px-4 py-2 bg-[#1c2b4a] text-blue-300 rounded-full uppercase tracking-wide border-[1px] border-blue-500">
           Our Services
         </span>
       </div>
@@ -47,7 +47,7 @@ const ProfessionalServices = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="rounded-xl p-6 border-[0.9px] border-white border-t-0 transition-all relative backdrop-blur-md bg-white/5 group hover:scale-105"
+            className="rounded-xl p-6  border-[0.9px] border-white border-t-0 transition-all relative backdrop-blur-md bg-white/5 group hover:scale-105"
           >
             <div
               className={`w-12 h-12 rounded-lg bg-gradient-to-br ${service.color} flex items-center justify-center mb-6`}

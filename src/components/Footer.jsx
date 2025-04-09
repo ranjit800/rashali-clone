@@ -24,7 +24,6 @@ const Footer = () => {
             <button className="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-r-md text-white font-semibold flex items-center justify-center">
               Subscribe <span className="ml-1">
               <BsFillSendFill />
-
               </span>
             </button>
           </div>
@@ -70,9 +69,9 @@ const Footer = () => {
         </div>
 
         {/* Quick Links */}
-        <div>
+        <div className="text-center md:text-left">
           <h5 className="text-xl font-semibold pb-2 mb-2">Quick Links</h5>
-          <div className="h-[0.5px] w-2/5 bg-purple-500 mb-4"></div>
+          <div className="h-[0.5px] w-2/5 bg-purple-500 mb-4 mx-auto md:mx-0"></div>
           <ul className="space-y-2 text-gray-300">
             <li className="text-purple-400 cursor-pointer">›<span className='hover:text-purple-500 text-white'> Careers</span></li>
             <li className="text-purple-400 cursor-pointer">›<span className='hover:text-purple-500 text-white'> Blogs</span></li>
@@ -82,9 +81,9 @@ const Footer = () => {
         </div>
 
         {/* Pages */}
-        <div>
-          <h5 className="text-xl font-semibold  pb-2 mb-2">Pages</h5>
-          <div className="h-[0.5px] w-1/5 bg-purple-500 mb-4"></div>
+        <div className="text-center md:text-left">
+          <h5 className="text-xl font-semibold pb-2 mb-2">Pages</h5>
+          <div className="h-[0.5px] w-1/5 bg-purple-500 mb-4 mx-auto md:mx-0"></div>
           <ul className="space-y-2 text-gray-300">
             <li className="text-purple-400 cursor-pointer">›<span className='hover:text-purple-500 text-white'> Home</span></li>
             <li className="text-purple-400 cursor-pointer">›<span className='hover:text-purple-500 text-white'> About Us</span></li>
@@ -95,11 +94,11 @@ const Footer = () => {
         </div>
 
         {/* Google Map */}
-        <div>
-          <h5 className="text-xl font-semibold flex items-center gap-1 text-purple-400 mb-2">
+        <div className="text-center md:text-left">
+          <h5 className="text-xl font-semibold flex items-center gap-1 text-purple-400 mb-2 justify-center md:justify-start">
             <HiOutlineLocationMarker /> Find Us
           </h5>
-          <div className="h-[0.5px] w-2/5 bg-purple-500 mb-4"></div>
+          <div className="h-[0.5px] w-2/5 bg-purple-500 mb-4 mx-auto md:mx-0"></div>
           <div className="relative">
             <iframe
               title="Google Map"

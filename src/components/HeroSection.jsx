@@ -33,7 +33,7 @@ const HeroSection = () => {
 
   return (
     <div className="w-full">
-       <div className=" container mx-auto relative flex flex-col md:flex-row items-center justify-between  px-6 md:px-4 py-16  bg-transparent  text-white ">
+       <div className=" container mx-auto relative flex flex-col md:flex-row items-center justify-between  px-6 md:px-4 py-16  bg-transparent  text-white md:gap-0 gap-28 ">
       {/* Left Section */}
       <div className="relative z-10 md:w-1/2 space-y-6">
         <img src={leftImage} alt="Left Background" className="absolute top-0 left-0 w-full h-full object-cover opacity-30 -z-10" />
@@ -42,18 +42,20 @@ const HeroSection = () => {
           <span>◆ TRANSFORM</span>
           <span>◆ GROW</span>
         </div>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-center md:text-left">
           <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-purple-500 text-transparent bg-clip-text">
             {text}
             <span className="animate-blink">|</span>
           </span>
         </h1>
-        <p className="text-[#B0B3BD] text-xl max-w-md">Further your market position with expert IT and Consulting services</p>
-        <button className="bg-gradient-to-r  from-blue-500 to-purple-600 px-6 py-3 text-white font-semibold rounded-lg shadow-lg hover:scale-105 hover:shadow-[0_0_40px_#263467] transition duration-300">
+        <p className="text-[#B0B3BD] text-xl max-w-md text-center md:text-left">Further your market position with expert IT and Consulting services</p>
+       <div className="flex justify-center md:justify-start">
+       <button className="bg-gradient-to-r  from-blue-500 to-purple-600 px-6 py-3 text-white font-semibold rounded-lg shadow-lg hover:scale-105 hover:shadow-[0_0_40px_#263467] transition duration-300">
           Get in Touch →
         </button>
+       </div>
       </div>
-      {/* bg-gradient-to-r from-blue-600 to-purple-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300 */}
+
       {/* Right Section */}
       <div className="w-full md:w-1/2 animate-fadeIn relative mb-10 md:mb-0" style={{ opacity: 1, transform: "none" }}>
         <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg opacity-75 blur-md"></div>
@@ -75,7 +77,7 @@ const HeroSection = () => {
     </div>
 
       {/* Bottom Services */}
-      <div className=" right-0 px-16 py-5 flex flex-wrap justify-between text-lg font-semibold">
+      <div className=" right-0 px-16 py-5  flex-wrap justify-between text-lg font-semibold md:flex hidden">
         {["CLOUD", "MOBILE APP", "WEB APP", "UI/UX", "DATA", "AI/ML", "IOT"].map((item, index) => (
           <span
             key={index}
